@@ -73,7 +73,7 @@ a {
     color: white;
     font-size: 32px;
     font-weight: bold;
-    z-index: 1; /* Coloca o texto na frente do overlay, se tirar, o fade vai pro texto também */
+    z-index: 4; /* Coloca o texto na frente do overlay, se tirar, o fade vai pro texto também */
 }
 
 /*imagem de fundo do slogan*/
