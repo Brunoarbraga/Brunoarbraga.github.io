@@ -1,166 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/*importa a fonte monstserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+/*importa a fonte irish grober*/
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
+
+/*Os valores de tamanhos estão exatamente iguais aos do figma, e em px */
+/* mudar para porcentagem */
 
 body {
-    background-color: #865DFF;
-    margin: 0px;
-    min-height: 1200px;
-
-    
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-height: 1000px;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+a {
+    color: #FFFFFF; /* Replace #000 with your desired color */
+}
+
+/* Container da tela toda, para organizar as seções com o flexbox*/
 .container{
     display: flex;
     flex-direction: column;
-    color: rgb(231, 231, 231);
-    background-color: #191825;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EBEC;
     border-radius: 15px;
     margin: 30px;
     padding: 30px;
     color: #1c1c1c;
-    box-shadow: 6px 6px 10px black;
-    max-width: 1200px;
     margin: auto;
-    margin-top: 100px;    
+    margin-top: 100px;
+    width: 70%;    
+    max-width: 80%;
     min-width: 400px;
+    height: 500px;
 }
 
 
-
-.profile{
+/*header*/
+.header{
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    /* justify-content: spa; */
-    color: #1c1c1c;
-    background-color: aquamarine;
+    background-color: #A68F8F;
+    height: 2%;
+    color: #FFFFFF;
+
 }
 
-.profile a{
-    width: 50px;
-    height: auto;
-    border-radius: 400px;
-    align-self: flex-start;
-}
-
-.info-container{
+/*logo e nome da marca*/
+.brand{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 1000px;
-}
-
-.title{
-    margin-left: 60px;
-    color: rgb(231, 231, 231);
-
-}
-
-#profile-photo{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 400px;
-    border: 3px solid rgb(255, 255, 255);
-    margin: 10px;
-    box-shadow: 0 0 15px rgb(15, 130, 184);
-    min-width: 300px;
-    min-height: 300px;
-}
-
-
-#arrow_img{
-    width: 50px;
-    height: auto;
-    border-radius: 400px;
-    align-self: flex-start;
-}
-
-/*
-#profile-photo:hover{
-    object-fit: none;
-}
-*/
-
-.title h1{
-    font-weight: 700;
-    font-size: 36px;
-}
-
-.title h3{
-    font-weight: 400;
-    font-size: 25px;
-}
-
-.logos img{
-    width: 50px;
-    height: auto;
-    border-radius: 100%;
-    /* align-self: flex-end; */
-    position: relative;
-    top:-140px;
-}
-
-.logos a{
-    width: 50px;
-    height: auto;
-    border-radius: 100%;
-}
-
-#logo:hover{
-    filter: invert(100%);
-}
-
-.logos{
-    align-items: right;
-    justify-content: flex-end;
-}
-
-
-
-.projetos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(231, 231, 231);
-    list-style-type: none;
-    background-color: #3A1078;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    text-align: left;
-    box-shadow: 6px 6px 10px rgb(1, 49, 63);
-
-}
-
-#list-title{
-    position: static;
-    float:right;
-    padding-left: 0px;
-}
-.projetos ul{
-
-    font-size: 30px;
-}
-
-.projetos li{
-    width: 400px;
-    margin:auto;
-    font-size: 25px;
+    font-size: 13px;
+    width: 18%;
+    font-family: 'Irish Grover', cursive;
+  
     
 }
 
-.projetos li:hover{
-    color: rgb(20, 176, 248);
-}
-
-#space {
-margin-left: 100px;
-margin-right: 100px;
-}
-a{
-    color: inherit;
-    text-decoration: none;
-}

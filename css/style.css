@@ -12,13 +12,13 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    height: 3963px;
+    min-height: 2000px;
 }
 
 html {
     margin: 0;
     padding: 0;
-    height: 3963px;
+    height: 2000px;
 }
 
 a {
